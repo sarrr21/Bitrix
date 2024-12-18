@@ -18,7 +18,6 @@ const testimonials = [
 const TestimonialSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Automatically slide every 4 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
@@ -29,7 +28,7 @@ const TestimonialSlider = () => {
 
   return (
     <div className="flex flex-col  p-16 bg-gray-100 rounded-lg  w-full ">
-      {/* Title */}
+      
       <h1 className="">Testimoinal</h1>
       <p className="text-lg sm:text-2xl md:text-3xl font-bold text-gray-800 space-y-6 ">
         {testimonials[currentIndex].title.split(" ")[0]}{" "}
@@ -41,17 +40,15 @@ const TestimonialSlider = () => {
         </span>
       </p>
 
-      {/* Description */}
       <p className="italic mt-4 text-sm sm:text-base md:text-lg  text-gray-600 leading-relaxed">
         {testimonials[currentIndex].description}
       </p>
 
-      {/* Author */}
+      
       <p className="mt-6 font-semibold text-sm sm:text-base md:text-lg text-gray-800">
         {testimonials[currentIndex].author}
       </p>
 
-      {/* Navigation Indicators */}
       <div className="flex justify-end space-x-2">
         {testimonials.map((_, index) => (
           <span

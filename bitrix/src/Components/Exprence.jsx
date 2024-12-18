@@ -4,7 +4,7 @@ import ExperienceAccordion from './Discription';
 const Exprence = () => {
   return (
     <div className="flex flex-col md:flex-row p-4 md:p-12 mt-8 md:mt-36 gap-8">
-      {/* Text and Accordion Section */}
+      
       <div className="w-full md:w-1/2">
         <h1 className="font-extrabold text-2xl md:text-4xl">
           <span className="text-green-500">BITRIX</span> INNOVATIONS
@@ -19,7 +19,7 @@ const Exprence = () => {
         </div>
       </div>
 
-      {/* Image Section */}
+     
       <div className="w-full md:w-1/2">
         <img
           src="https://www.dyooti.com/wp-content/uploads/2024/01/Screen_1_Image_2-2.png"

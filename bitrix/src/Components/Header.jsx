@@ -6,7 +6,7 @@ const Header = () => {
       className="relative h-screen bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://www.dyooti.com/wp-content/uploads/2024/01/Home_Banner.jpg')", // Replace with your image URL
+          "url('https://www.dyooti.com/wp-content/uploads/2024/01/Home_Banner.jpg')", 
       }}
     >
       <div className="pt-28 px-4">

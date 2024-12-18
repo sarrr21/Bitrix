@@ -3,7 +3,7 @@ import React from 'react';
 const ProcessRoadmap = () => {
   return (
     <div className="w-full bg-white py-12 px-4 lg:px-16 relative overflow-hidden">
-      {/* Top Title Section */}
+      
       <div className="text-center mb-12">
         <h2 className="text-3xl font-semibold mb-4">Process Roadmap</h2>
         <p className="text-gray-700 max-w-2xl mx-auto">
@@ -14,7 +14,7 @@ const ProcessRoadmap = () => {
       </div>
       
       <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center space-y-8 lg:space-y-0 lg:space-x-8 relative">
-        {/* Left Image */}
+       
         <div className="flex-shrink-0">
           <img 
             src="/path/to/chess-piece.png" 
@@ -23,15 +23,15 @@ const ProcessRoadmap = () => {
           />
         </div>
 
-        {/* Right Content Grid */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full">
-          {/* Assessment */}
+          
           <div className="bg-white rounded-lg shadow p-6 relative">
             <h3 className="text-green-600 font-semibold mb-2">Assessment</h3>
             <p className="text-gray-700 text-sm mb-4">
               This stage involves understanding the client's business needs and IT infrastructure.
             </p>
-            {/* Icon (example: clock) */}
+           
             <div className="absolute bottom-4 right-4 text-green-600">
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -47,14 +47,14 @@ const ProcessRoadmap = () => {
             </div>
           </div>
 
-          {/* Implementation */}
+        
           <div className="bg-white rounded-lg shadow p-6 relative">
             <h3 className="text-orange-600 font-semibold mb-2">Implementation</h3>
             <p className="text-gray-700 text-sm mb-4">
               The IT consultant implements the plan, which may involve installing new hardware and 
               software, configuring systems, and migrating data.
             </p>
-            {/* Icon (example: leaf) */}
+           
             <div className="absolute bottom-4 right-4 text-orange-600">
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -122,7 +122,6 @@ const ProcessRoadmap = () => {
         </div>
       </div>
 
-      {/* Optional: A dotted line or decorative element */}
       <div className="absolute hidden lg:block top-1/3 left-[20%] transform -translate-y-1/2">
         <svg width="200" height="2" viewBox="0 0 200 2" fill="none" xmlns="http://www.w3.org/2000/svg">
           <line x1="0" y1="1" x2="200" y2="1" stroke="green" strokeDasharray="4 4"/>

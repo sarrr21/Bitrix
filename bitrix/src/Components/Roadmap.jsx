@@ -35,7 +35,6 @@ const services = [
 function Roadmap() {
   return (
     <div className="max-w-7xl mx-auto p-4 md:p-8">
-      {/* Heading */}
       <h1 className="text-center text-xl md:text-2xl font-bold mb-4">Process Roadmap</h1>
       <p className="text-center mb-8 text-sm md:text-base leading-relaxed">
         We assist you in evaluating your current Bitrix implementation through a
@@ -43,9 +42,7 @@ function Roadmap() {
         offering a strategic approach to optimize your workflow efficiency and collaboration.
       </p>
 
-      {/* Layout */}
       <div className="flex flex-col md:flex-row gap-8">
-        {/* Image Section */}
         <div className="w-full md:w-1/2">
           <img
             src="https://www.dyooti.com/wp-content/uploads/2024/01/Screen_1_Image_3-1.png"
@@ -54,7 +51,6 @@ function Roadmap() {
           />
         </div>
 
-        {/* Services Section */}
         <div className="w-full md:w-2/3">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((service, index) => (
@@ -64,13 +60,13 @@ function Roadmap() {
                   index % 2 === 0 ? 'md:translate-y-2' : 'md:-translate-y-2'
                 }`}
               >
-                {/* Title */}
+        
                 <div className={`${service.color} text-lg font-bold mb-2`}>{service.title}</div>
 
-                {/* Description */}
+                
                 <p className="text-gray-600 text-sm flex-grow">{service.description}</p>
 
-                {/* Icon */}
+                
                 <div className="flex justify-end mt-24">
                   <service.icon className={`w-24 h-24 ${service.color}`} />
                 </div>
